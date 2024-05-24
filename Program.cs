@@ -28,23 +28,7 @@ namespace ASP.Net_Routage
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}") ;
-
-            // Version par attributs
-            app.MapControllerRoute(
-                name: "Say", 
-                pattern: "{controller=Hello}/{action=SayHello}/{id?}");  
-
-            app.MapControllerRoute(
-                name: "Yell", 
-                pattern: "{controller=Hello}/{action=YellHello}/{id?}");
-
-            // Version conventionnelle
-            /*app.MapControllerRoute(
-                name: "Hello",
-                pattern: "{controller=Hello}/{action=SayHello}/{id?}");*/  
-
-            
+                pattern: "{controller=Home}/{action=Index}/{id?}") ;  
 
             app.Run();
         }
